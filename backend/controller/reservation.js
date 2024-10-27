@@ -1,7 +1,7 @@
 import ErrorHandler from "../error/error.js"
 import reservation from "../models/reservationSchema.js"
 
-export const sendReservation= async (req,res,next)=>{
+const sendReservation= async (req,res,next)=>{
     const {firstName,lastName,email,phone,date,time} =req.body;
     if(!firstName || !lastName || !email || !phone || !date || !time){
         return next(new ErrorHandler("Please fill full form",400));
@@ -22,3 +22,5 @@ export const sendReservation= async (req,res,next)=>{
         return next(new ErrorHandler(validationErrors.join(' , '),400))
     }
 }
+
+export default sendReservation;
