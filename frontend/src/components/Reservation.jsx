@@ -18,7 +18,7 @@ const Reservation = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:4000/api/v1/reservation/send",
+        "https://khana-khazana-cyf8oda3y-sanidhya-varshneys-projects.vercel.app/api/v1/reservation/send",
         { firstName, lastName, email, phone, date, time },
         {
           headers: {
