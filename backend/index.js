@@ -8,12 +8,11 @@ import reservationRouter from "./routes/reservationRoute.js"
 const app =express();
 dotenv.config({path:'./config/config.env'})
 
-// app.use(cors({
-//     origin:'https://khazanakhana.netlify.app',
-//     methods: ['GET','POST','HEAD','PUT','PATCH','DELETE'],
-// }))
+app.use(cors({
+    origin:'*',
+    methods: ['GET','POST','HEAD','PUT','PATCH','DELETE'],
+}))
 
-app.use(cors())
 app.get("/",(req,res)=>{
     res.send("Hello");
 })
