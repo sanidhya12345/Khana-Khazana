@@ -11,7 +11,7 @@ dotenv.config({path:'./config/config.env'})
 app.use(cors({
     origin:'https://khana-khazana-iota.vercel.app',
     methods:["POST"],
-    credentials:false
+    credentials:true
 }))
 
 app.get("/",(req,res)=>{
