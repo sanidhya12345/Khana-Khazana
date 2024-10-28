@@ -2,6 +2,7 @@
     "version": 2,
     "builds": [{ "src": "./index.js", "use": "@vercel/node" }],
     "routes": [{ "src": "/(.*)", "dest": "/","methods":["POST"],"headers":{
-      "Allow-Cross-Allow-Origin":"*"
+      "Allow-Cross-Allow-Origin":"*",
+      "Access-Control-Allow-Origin":"*"
     }}]
   }
