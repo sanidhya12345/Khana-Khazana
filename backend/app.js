@@ -9,7 +9,7 @@ const app =express();
 dotenv.config({path:'./config/config.env'})
 
 app.use(cors({
-    origin:'https://khana-khazana-cyf8oda3y-sanidhya-varshneys-projects.vercel.app/',
+    origin:'https://khana-khazana-psi.vercel.app/',
     methods:["POST"],
     credentials:true
 }))
