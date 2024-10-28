@@ -12,6 +12,7 @@ app.use(cors({
     origin:'https://khana-khazana-iota.vercel.app',
     methods: ['GET','POST','HEAD','PUT','PATCH','DELETE'],
     allowedHeaders: ['Access-Control-Allow-Origin'],
+    exposedHeaders: ['Access-Control-Allow-Headers']
 }))
 
 app.get("/",(req,res)=>{
