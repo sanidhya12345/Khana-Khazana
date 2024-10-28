@@ -11,7 +11,6 @@ dotenv.config({path:'./config/config.env'})
 app.use(cors({
     origin:'https://khazanakhana.netlify.app',
     methods: ['GET','POST','HEAD','PUT','PATCH','DELETE'],
-    allowedHeaders: ['Content-Type', 'Authorization'],
 }))
 
 app.get("/",(req,res)=>{
