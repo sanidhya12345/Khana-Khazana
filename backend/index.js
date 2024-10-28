@@ -9,7 +9,7 @@ const app =express();
 dotenv.config({path:'./config/config.env'})
 
 app.use(cors({
-    origin:'https://khazanakhana.netlify.app/',
+    origin:'https://khazanakhana.netlify.app',
     methods: ['GET','POST','HEAD','PUT','PATCH','DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization'],
 }))
