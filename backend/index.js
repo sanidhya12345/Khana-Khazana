@@ -13,7 +13,7 @@ app.use(cors({
     methods:["POST"],
     credentials:true
 }))
-
+app.options('*', cors()); // Allow preflight requests for all routes
 app.get("/",(req,res)=>{
     res.send("Hello");
 })
