@@ -10,7 +10,8 @@ dotenv.config({path:'./config/config.env'})
 
 app.use(cors({
     origin:'https://khana-khazana-iota.vercel.app',
-    methods:["POST"],
+    methods: ['GET','POST','HEAD','PUT','PATCH','DELETE'],
+    allowedHeaders: ['Access-Control-Allow-Origin'],
 }))
 
 app.get("/",(req,res)=>{
